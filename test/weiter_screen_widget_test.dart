@@ -1,4 +1,3 @@
-import 'package:waiter_app/screens/waiter_screen.dart';
 
 // void Main(){
 //   testWidgets('WaiterScreen has a title and message', (tester) async {

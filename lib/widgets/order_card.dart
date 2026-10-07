@@ -58,7 +58,7 @@ class _OrderCardState extends State<OrderCard> {
                       ? Colors.greenAccent
                       : table.luxury == 'Vip1'
                           ? Colors.amber.shade100
-                          : Colors.lightBlue.withOpacity(0.3),
+                          : Colors.lightBlue.withValues(alpha: 0.3),
                   borderRadius: BorderRadius.circular(8.0),
                 ),
                 child: Center(

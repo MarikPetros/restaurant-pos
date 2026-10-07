@@ -18,8 +18,7 @@ class _OrderScreenState extends State<OrdersScreen> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemExtent: 80,
-      cacheExtent: 1.5,
+      scrollCacheExtent: ScrollCacheExtent.pixels(1.5), itemExtent: 80,
       itemCount: widget.ordersList.length,
       itemBuilder: (ctx, index) {
         final order = widget.ordersList[index];

@@ -25,7 +25,7 @@ class OrdersDatabaseHelper {
     return _database!;
   }
 
-  _initDatabase() async {
+  Future<Database> _initDatabase() async {
     String path = join(await getDatabasesPath(), _databaseName);
     return await openDatabase(path,
         version: _databaseVersion, onCreate: _onCreate);

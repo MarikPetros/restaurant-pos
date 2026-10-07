@@ -36,7 +36,7 @@ class MealsDatabaseHelper {
 
   Future<Database> get database async => _database ??= await _initDatabase();
 
-  _initDatabase() async {
+  Future<sqflite.Database> _initDatabase() async {
     log('Initializing database...');
     var databasesPath = await getDatabasesPath();
     String path = join(databasesPath, _databaseName);

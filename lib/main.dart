@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue.shade500),
         useMaterial3: true,
       ),
+      debugShowCheckedModeBanner: false,
       home: const HomeScreen(
         title: 'Home',
       ),
